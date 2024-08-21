@@ -10,17 +10,17 @@ function NavBar() {
         </Link>
       </div>
       <div>
-        <Link to="/activities">
+        <Link to="/hobbies">
           <p>Hobbies</p>
         </Link>
       </div>
       <div>
-        <Link to="/members">
+        <Link to="/actividades">
           <p>Actividades</p>
         </Link>
       </div>
       <div>
-        <Link to="/contact">
+        <Link to="/contacto">
           <p>Contacto</p>
         </Link>
       </div>

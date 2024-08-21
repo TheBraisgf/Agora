@@ -1,20 +1,22 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-//Components
-import NavBar from "./components/NavBar.js";
-
 //Pages
 
 import MainPage from "./pages/MainPage";
-
+import HobbyPage from "./pages/HobbyPage";
+import ActivitiesPage from "./pages/ActivitiesPage";
+import ContactPage from "./pages/ContactPage";
 function App() {
   return (
     <Router>
       <div className="App">
-        <NavBar />
         <Routes>
           <Route path="/" element={<MainPage />} />
+          <Route path="/home" element={<MainPage />} />
+          <Route path="/hobbies" element={<HobbyPage />} />
+          <Route path="/actividades" element={<ActivitiesPage />} />
+          <Route path="/contacto" element={<ContactPage />} />
         </Routes>
       </div>
     </Router>

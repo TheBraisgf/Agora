@@ -1,6 +1,18 @@
 //UI SETTINGS
+@import "./App.scss";
 
 //Components
 @import "./components/NavBar";
+@import "./components/Card";
 
 //Pages
+@import "./pages/MainPage";
+@import "./pages/HobbyPage";
+
+//Fonts
+@font-face {
+  font-family: "capitalis";
+  src: url("../assets/fonts/Capitalis.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

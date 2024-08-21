@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Juego de Mesa - Catan",
+    "image": "https://example.com/catan.jpg",
+    "frequency": "Semanal",
+    "location": "Centro Cultural A Coruña",
+    "lastDate": "15/08/2024",
+    "timesDone": 25,
+    "interestedMembers": 10
+  },
+  {
+    "title": "Cine - Películas de Ciencia Ficción",
+    "image": "https://example.com/cine.jpg",
+    "frequency": "Mensual",
+    "location": "Cine Odeón",
+    "lastDate": "05/08/2024",
+    "timesDone": 10,
+    "interestedMembers": 15
+  }
+]
