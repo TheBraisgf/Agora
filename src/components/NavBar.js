@@ -19,6 +19,12 @@ function NavBar() {
           <p>Actividades</p>
         </Link>
       </div>
+
+      <div>
+        <Link to="/registro">
+          <p>Registro</p>
+        </Link>
+      </div>
       <div>
         <Link to="/contacto">
           <p>Contacto</p>

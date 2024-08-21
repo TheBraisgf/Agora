@@ -1,0 +1,100 @@
+// RegisterPage.scss
+
+.register-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f4f4f9; // Fondo suave
+  font-family: "Arial", sans-serif;
+  color: #333;
+
+  h1 {
+    font-family: "Capitalis", sans-serif;
+    text-shadow: 6px 1px 2px rgb(255, 255, 255);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #000000;
+    text-align: center;
+  }
+
+  form {
+    background: #fff; // Fondo blanco para el formulario
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra suave
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+
+    label {
+      display: block;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: #2c3e50;
+
+      input,
+      textarea {
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        margin-top: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 35px;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+    }
+
+    fieldset {
+      border: none;
+      margin: 0;
+      padding: 0;
+
+      legend {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        color: #2c3e50;
+      }
+
+      label {
+        align-items: center !important;
+        display: flex !important;
+        flex-direction: row-reverse !important;
+      }
+    }
+
+    button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #3498db; // Color principal
+      border: none;
+      border-radius: 35px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #2980b9; // Color más oscuro al pasar el ratón
+      }
+    }
+  }
+  .hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 5 columnas */
+    gap: 10px; /* Espaciado entre los elementos */
+  }
+
+  .hobbies-grid label {
+    display: block;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 35px;
+  }
+}

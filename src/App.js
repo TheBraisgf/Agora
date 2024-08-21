@@ -7,6 +7,8 @@ import MainPage from "./pages/MainPage";
 import HobbyPage from "./pages/HobbyPage";
 import ActivitiesPage from "./pages/ActivitiesPage";
 import ContactPage from "./pages/ContactPage";
+import RegisterPage from "./pages/RegisterPage";
+
 function App() {
   return (
     <Router>
@@ -16,6 +18,7 @@ function App() {
           <Route path="/home" element={<MainPage />} />
           <Route path="/hobbies" element={<HobbyPage />} />
           <Route path="/actividades" element={<ActivitiesPage />} />
+          <Route path="/registro" element={<RegisterPage />} />
           <Route path="/contacto" element={<ContactPage />} />
         </Routes>
       </div>

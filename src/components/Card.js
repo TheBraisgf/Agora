@@ -21,9 +21,6 @@ const Card = ({
           <strong>Ubicación:</strong> {location}
         </p>
         <p>
-          <strong>Última vez:</strong> {lastDate}
-        </p>
-        <p>
           <strong>Veces realizado:</strong> {timesDone}
         </p>
         <p>
