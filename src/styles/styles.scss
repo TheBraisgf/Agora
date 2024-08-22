@@ -4,11 +4,13 @@
 //Components
 @import "./components/NavBar";
 @import "./components/Card";
-
+@import "./components/CardModal";
+@import "./components/CalendarModal";
 //Pages
 @import "./pages/MainPage";
 @import "./pages/HobbyPage";
 @import "./pages/RegisterPage";
+@import "./pages/contactPage";
 
 //Fonts
 @font-face {

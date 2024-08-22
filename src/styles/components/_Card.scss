@@ -1,10 +1,12 @@
+// Card.scss
 .card {
   background-color: #fff;
+  cursor: pointer;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.3s ease;
-  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%; // Asegúrate de que la tarjeta ocupe el 100% del ancho disponible
 
   &:hover {
     transform: translateY(-5px);
@@ -14,18 +16,19 @@
   // Imagen
   .card-image {
     width: 100%;
-    height: 180px;
+    height: 200px; // Aumentar la altura para que la imagen se vea bien
     object-fit: cover;
   }
 
   // Contenido dentro de la tarjeta
   .card-content {
-    padding: 15px;
+    padding: 20px; // Aumentar el padding para más espacio interior
 
     .card-title {
-      font-size: 1.75rem;
+      font-size: 1.5rem; // Ajustar tamaño del título
       color: #333;
       margin-bottom: 10px;
+      font-weight: 600; // Aumentar peso de fuente para un aspecto más destacado
     }
 
     p {

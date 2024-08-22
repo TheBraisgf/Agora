@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-//Components
+// Components
 import NavBar from "../components/NavBar";
 
 function RegisterPage() {
@@ -19,15 +19,8 @@ function RegisterPage() {
     // Fetch para obtener los hobbies disponibles desde el servidor
     const fetchHobbies = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/hobbies", {
-          method: "GET",
-          headers: new Headers({
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
-          }),
-        });
-
-        if (response) {
+        const response = await fetch("http://localhost:5000/api/hobbies");
+        if (response.ok) {
           const data = await response.json();
           setHobbiesList(data);
         } else {
@@ -167,11 +160,13 @@ function RegisterPage() {
           <legend>Selecciona tus hobbies favoritos:</legend>
           <div className="hobbies-grid">
             {hobbiesList.map((hobby) => (
-              <label key={hobby.id}>
+              <label key={hobby._id}>
+                {" "}
+                {/* Usamos el _id de MongoDB como clave */}
                 <input
                   type="checkbox"
-                  value={hobby.id}
-                  checked={formData.hobbies.includes(hobby.id.toString())}
+                  value={hobby._id} // Usamos el _id de MongoDB
+                  checked={formData.hobbies.includes(hobby._id.toString())}
                   onChange={handleCheckboxChange}
                 />
                 {hobby.nombre}

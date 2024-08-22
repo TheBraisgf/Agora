@@ -1,34 +1,12 @@
 import React from "react";
 
-const Card = ({
-  title,
-  image,
-  frequency,
-  location,
-  lastDate,
-  timesDone,
-  interestedMembers,
-}) => {
+function Card({ title, image, onClick }) {
   return (
-    <div className="card">
+    <div className="card" onClick={onClick}>
       <img src={image} alt={title} className="card-image" />
-      <div className="card-content">
-        <h3 className="card-title">{title}</h3>
-        <p>
-          <strong>Frecuencia:</strong> {frequency}
-        </p>
-        <p>
-          <strong>Ubicación:</strong> {location}
-        </p>
-        <p>
-          <strong>Veces realizado:</strong> {timesDone}
-        </p>
-        <p>
-          <strong>Miembros interesados:</strong> {interestedMembers}
-        </p>
-      </div>
+      <h3 className="card-title">{title}</h3>
     </div>
   );
-};
+}
 
 export default Card;
