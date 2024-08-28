@@ -3,8 +3,16 @@ import React from "react";
 function Modal({ hobby, onClose, onAdd }) {
   if (!hobby) return null;
 
+  // Función para manejar clics fuera del modal
+  const handleOverlayClick = (e) => {
+    // Verificar si el clic fue fuera del contenido del modal
+    if (e.target.classList.contains("modal-overlay")) {
+      onClose();
+    }
+  };
+
   return (
-    <div className="modal-overlay">
+    <div className="modal-overlay" onClick={handleOverlayClick}>
       <div className="modal-content">
         <button className="modal-close" onClick={onClose}>
           &times;

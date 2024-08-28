@@ -1,6 +1,7 @@
 body {
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .App {
@@ -10,19 +11,12 @@ body {
 }
 
 .backgroundImg {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; // Esto ajusta la imagen a la pantalla sin distorsión
-  z-index: -1; // Esto mantiene la imagen en el fondo
-  pointer-events: none; // Para que la imagen no interfiera con la interacción
-}
-
-// Responsive adjustments for mobile
-@media (max-width: 768px) {
-  .backgroundImg {
-    object-position: center; // Asegura que el centro de la imagen esté visible en pantallas pequeñas
-  }
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(60%) blur(5px);
 }
