@@ -1,19 +1,14 @@
-//Assets
-import backgroundImg from "../assets/img/templeback.jpg";
-
-//Components
+// Components
 import NavBar from "../components/NavBar";
+import logoAgora from "../assets/img/logoAgora.png"; // Importa el logo
 
 function MainPage() {
   return (
     <main className="mainPage">
       <NavBar />
-
-      {/* Imagen de fondo */}
-      <img src={backgroundImg} alt="Templo antiguo" className="backgroundImg" />
-
-      {/* Título principal del grupo */}
       <div className="hero-section">
+        <img src={logoAgora} alt="Logo del Ágora" className="logoAgora" />
+
         <h1 className="main-title">Bienvenido al Ágora</h1>
         <p className="main-description">
           El Ágora es el espacio perfecto para personas que, como tú, tienen

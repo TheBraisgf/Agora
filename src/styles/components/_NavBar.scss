@@ -1,24 +1,109 @@
 .navbar {
   z-index: 1;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background: transparent;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  gap: 3vw;
+  padding: 10px;
 
-  a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
   }
 
-  p {
-    font-family: "Capitalis", sans-serif;
-    font-size: 5vh;
-    text-shadow: 6px 1px 2px black;
+  // Icono de menú hamburguesa (visible en móviles)
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px; // Añadir espacio alrededor del icono
 
-    &:hover {
-      color: rgb(177, 177, 177);
+    .burger-line {
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+
+    &.open {
+      .burger-line:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+      }
+      .burger-line:nth-child(2) {
+        opacity: 0;
+      }
+      .burger-line:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
+      }
+    }
+  }
+
+  // Links de navegación
+  .nav-links {
+    display: flex;
+    gap: 3vw;
+
+    a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+
+      p {
+        font-family: "Capitalis", sans-serif;
+        font-size: 5vh;
+        text-shadow: 6px 1px 2px black;
+
+        &:hover {
+          color: rgb(177, 177, 177);
+        }
+      }
+    }
+
+    // Ocultar links en móviles
+    @media (max-width: 768px) {
+      display: none;
+      flex-direction: column;
+      gap: 20px;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+
+      &.open {
+        display: flex;
+      }
+
+      a p {
+        font-size: 3vh; // Ajustar el tamaño del texto en móviles
+      }
+    }
+  }
+
+  // Mostrar icono hamburguesa en pantallas pequeñas
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: flex;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+    }
+
+    // Añadir una caja o fondo al icono para hacerlo más visible
+    .menu-icon {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 5px;
+      padding: 10px;
     }
   }
 }

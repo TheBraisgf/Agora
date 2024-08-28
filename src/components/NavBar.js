@@ -1,34 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header className="navbar">
-      <div>
-        <Link to="/home">
-          <p>Inicio</p>
-        </Link>
-      </div>
-      <div>
-        <Link to="/hobbies">
-          <p>Hobbies</p>
-        </Link>
-      </div>
-      <div>
-        <Link to="/actividades">
-          <p>Actividades</p>
-        </Link>
-      </div>
+      <div className="navbar-container">
+        <div className="menu-icon" onClick={toggleMenu}>
+          {/* Icono de hamburguesa */}
+          <span className={`burger-line ${isOpen ? "open" : ""}`}></span>
+          <span className={`burger-line ${isOpen ? "open" : ""}`}></span>
+          <span className={`burger-line ${isOpen ? "open" : ""}`}></span>
+        </div>
 
-      <div>
-        <Link to="/registro">
-          <p>Registro</p>
-        </Link>
-      </div>
-      <div>
-        <Link to="/contacto">
-          <p>Contacto</p>
-        </Link>
+        <nav className={`nav-links ${isOpen ? "open" : ""}`}>
+          <Link to="/home">
+            <p>Inicio</p>
+          </Link>
+          <Link to="/hobbies">
+            <p>Hobbies</p>
+          </Link>
+          <Link to="/actividades">
+            <p>Actividades</p>
+          </Link>
+          <Link to="/registro">
+            <p>Registro</p>
+          </Link>
+          <Link to="/contacto">
+            <p>Contacto</p>
+          </Link>
+        </nav>
       </div>
     </header>
   );

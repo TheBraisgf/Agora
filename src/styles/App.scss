@@ -1,4 +1,28 @@
 body {
-  margin: 0 !important;
+  margin: 0;
   box-sizing: border-box;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.backgroundImg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; // Esto ajusta la imagen a la pantalla sin distorsión
+  z-index: -1; // Esto mantiene la imagen en el fondo
+  pointer-events: none; // Para que la imagen no interfiera con la interacción
+}
+
+// Responsive adjustments for mobile
+@media (max-width: 768px) {
+  .backgroundImg {
+    object-position: center; // Asegura que el centro de la imagen esté visible en pantallas pequeñas
+  }
 }
