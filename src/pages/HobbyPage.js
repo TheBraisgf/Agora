@@ -13,7 +13,9 @@ function HobbyPage() {
   useEffect(() => {
     const fetchHobbies = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/hobbies");
+        const response = await fetch(
+          "https://agoraback.onrender.com/api/hobbies"
+        );
         if (response.ok) {
           const data = await response.json();
           setHobbies(data);
@@ -27,7 +29,9 @@ function HobbyPage() {
 
     const fetchUsers = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/users");
+        const response = await fetch(
+          "https://agoraback.onrender.com/api/users"
+        );
         if (response.ok) {
           const data = await response.json();
           setUsers(data);
