@@ -41,7 +41,7 @@ function MainPage() {
         </ul>
       </div>
       </div>
-      
+      <footer> Ⓒ2024 Agora Group - WEB IN PROGRESS</footer>
     </main>
   );
 }
