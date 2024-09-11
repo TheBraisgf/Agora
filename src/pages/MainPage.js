@@ -24,17 +24,17 @@ function MainPage() {
         <h2>¡Únete a nosotros!</h2>
         <ul>
           <li>
-            <a href="https://www.eventbrite.com/e/tu-evento" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.eventbrite.com/e/entradas-agora-1-1002258982597?aff=ebdsshother&utm_share_source=listing_android" target="_blank" rel="noopener noreferrer">
               Evento en Eventbrite
             </a>
           </li>
           <li>
-            <a href="https://chat.whatsapp.com/tu-grupo" target="_blank" rel="noopener noreferrer">
+            <a href="https://chat.whatsapp.com/BvngxgKN7bJA9nrtwXz4GU" target="_blank" rel="noopener noreferrer">
               Grupo de WhatsApp
             </a>
           </li>
           <li>
-            <a href="https://discord.com/invite/tu-grupo" target="_blank" rel="noopener noreferrer">
+            <a href="https://discord.gg/UTyxH5SD" target="_blank" rel="noopener noreferrer">
               Grupo de Discord
             </a>
           </li>
