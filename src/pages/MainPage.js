@@ -3,7 +3,7 @@ import questionsData from "../assets/questions.json";
 import "../styles/pages/_MainPage.scss";
 import logoAgora from "../assets/img/logoAgora.png";
 
-const PASSING_SCORE = 8;
+const PASSING_SCORE = 16;
 
 function MainPage() {
   let [step, setStep] = useState(0);
@@ -109,7 +109,7 @@ function MainPage() {
         questionsData[currentQuestion].points[optionIndex];
     }
     setScore(newScore);
-
+    console.log(newScore);
     if (currentQuestion < questionsData.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {

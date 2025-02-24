@@ -1,77 +1,137 @@
 [
   {
-    "question": "¿Te gusta la tecnología y la programación?",
-    "options": ["Sí, me encanta", "No mucho"],
-    "points": [2, 0]
-  },
-  {
-    "question": "¿Lees libros con frecuencia?",
-    "options": ["Sí, leo bastante", "Leo ocasionalmente", "No leo"],
-    "points": [2, 1, -1]
-  },
-  {
-    "question": "¿Te gustan los videojuegos y juegos de mesa?",
+    "question": "¿Qué tanto te interesa la tecnología y la programación?",
     "options": [
-      "Sí, ambos",
-      "Solo videojuegos",
-      "Solo juegos de mesa",
-      "Ninguno"
-    ],
-    "points": [2, 1, 1, -2]
-  },
-  {
-    "question": "¿Practicas algún deporte o actividad física?",
-    "options": [
-      "Sí, entreno regularmente",
-      "Hago algo de ejercicio",
-      "No hago nada"
+      "Es una de mis pasiones",
+      "Me interesa, pero no es mi foco principal",
+      "No me llama mucho la atención"
     ],
     "points": [2, 1, 0]
   },
   {
-    "question": "¿Eres fanático del fútbol?",
-    "options": ["Sí, me encanta", "Lo veo ocasionalmente", "No me interesa"],
-    "points": [-5, -3, 2]
-  },
-  {
-    "question": "¿Prefieres conversaciones sobre cultura, ciencia o política?",
-    "options": ["Cultura y ciencia", "Política", "Ninguna"],
-    "points": [2, -4, -1]
-  },
-  {
-    "question": "¿Tienes algún hobby creativo?",
-    "options": ["Sí, dibujo, escribo o creo contenido", "No"],
-    "points": [2, -2]
-  },
-  {
-    "question": "¿Qué opinas de la astrología y pseudociencias?",
-    "options": ["Son interesantes", "No creo en ellas", "Las odio"],
-    "points": [-4, 2, 1]
-  },
-  {
-    "question": "¿Te consideras alguien radical en algún tema?",
-    "options": ["Sí", "No"],
-    "points": [-5, 2]
-  },
-  {
-    "question": "¿Te gustan las fiestas, beber y salir de fiesta?",
+    "question": "¿Cuánto disfrutas la lectura?",
     "options": [
-      "Sí, me encanta",
-      "Depende del momento",
-      "No, prefiero otros planes"
+      "Leo constantemente y disfruto aprender",
+      "Leo ocasionalmente por entretenimiento",
+      "No suelo leer mucho"
     ],
-    "points": [-8, -1, 2]
+    "points": [2, 1, 0]
   },
-
   {
-    "question": "¿Qué opinas de la inteligencia artificial?",
-    "options": ["Es el futuro", "Es peligrosa", "Me da igual"],
-    "points": [2, -1, 0]
+    "question": "¿Tienes hobbies relacionados con la creatividad?",
+    "options": [
+      "Sí, dibujo, escribo, edito videos o creo contenido",
+      "A veces, pero no me dedico mucho a ello",
+      "No, pero disfruto consumir contenido creativo"
+    ],
+    "points": [2, 1, 0]
   },
-
   {
-    "question": "¿Te consideras un friki?",
-    "options": ["Sí, me encantan los cómics, anime y videojuegos", "No"],
-    "points": [2, -1]
+    "question": "¿Qué papel juegan los videojuegos o juegos de mesa en tu vida?",
+    "options": [
+      "Ambos son una parte importante de mis pasatiempos",
+      "Me gustan, pero no juego tanto",
+      "No me interesan demasiado"
+    ],
+    "points": [2, 1, 0]
+  },
+  {
+    "question": "¿Practicas algún tipo de actividad física?",
+    "options": [
+      "Sí, hago deporte regularmente",
+      "Intento mantenerme activo",
+      "No practico ejercicio, pero me gustaría empezar"
+    ],
+    "points": [2, 1, 0]
+  },
+  {
+    "question": "¿Qué tanto te interesa la cultura general y la ciencia?",
+    "options": [
+      "Me apasiona aprender sobre estos temas",
+      "Me interesa, pero no investigo activamente",
+      "No es algo en lo que piense mucho"
+    ],
+    "points": [2, 1, 0]
+  },
+  {
+    "question": "¿Cómo te llevas con el fútbol y otros deportes masivos?",
+    "options": [
+      "Me encanta y lo sigo con pasión",
+      "Lo disfruto ocasionalmente",
+      "No me interesa demasiado"
+    ],
+    "points": [0, 1, 2]
+  },
+  {
+    "question": "¿Qué opinas sobre la inteligencia artificial y las nuevas tecnologías?",
+    "options": [
+      "Son el futuro y me interesa mucho el tema",
+      "Me parecen interesantes, pero con precaución",
+      "No me llaman mucho la atención"
+    ],
+    "points": [2, 1, 0]
+  },
+  {
+    "question": "¿Cómo percibes la astrología y otras creencias alternativas?",
+    "options": [
+      "Creo firmemente en ellas y forman parte de mi vida",
+      "No creo en ellas, pero me parecen curiosas y entretenidas",
+      "Prefiero un enfoque basado en el pensamiento crítico y la ciencia"
+    ],
+    "points": [0, 1, 2]
+  },
+  {
+    "question": "¿Cómo te defines en cuanto a debates e intercambio de ideas?",
+    "options": [
+      "Me encanta debatir y aprender de diferentes perspectivas",
+      "Depende del tema y la situación",
+      "No suelo entrar en debates"
+    ],
+    "points": [2, 1, 0]
+  },
+  {
+    "question": "¿Cómo disfrutas el tiempo libre con amigos o en sociedad?",
+    "options": [
+      "Prefiero reuniones tranquilas o planes con sentido",
+      "Disfruto salir de vez en cuando",
+      "Me gusta salir de fiesta frecuentemente"
+    ],
+    "points": [2, 1, 0]
+  },
+  {
+    "question": "¿Te consideras una persona con mente abierta y curiosa?",
+    "options": [
+      "Sí, me encanta aprender y explorar nuevas ideas",
+      "Depende del tema, pero intento mantenerme abierto",
+      "No suelo cambiar de opinión fácilmente"
+    ],
+    "points": [2, 1, 0]
+  },
+  {
+    "question": "¿Te gustan los cómics, manga o superhéroes?",
+    "options": [
+      "Sí, soy fan de todos",
+      "Me gustan algunos, pero no soy muy fan",
+      "No me interesan"
+    ],
+    "points": [2, 1, 0]
+  },
+  {
+    "question": "¿Qué opinas del anime?",
+    "options": [
+      "Me encanta y veo regularmente",
+      "He visto algunos, pero no soy muy otaku",
+      "No me gusta o no veo"
+    ],
+    "points": [2, 1, 0]
+  },
+  {
+    "question": "¿Cómo es tu relación con el cine?",
+    "options": [
+      "Amo el cine y disfruto analizar películas",
+      "Me gusta ver películas ocasionalmente",
+      "No veo muchas películas"
+    ],
+    "points": [2, 1, 0]
   }
 ]
