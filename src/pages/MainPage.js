@@ -128,7 +128,7 @@ function MainPage() {
       setCurrentQuestion(currentQuestion - 1);
     }
   };
-  step = 2;
+
   return (
     <div className="mainPage">
       <img src={logoAgora} alt="Logo del Ágora" className="logoAgora" />
