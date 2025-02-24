@@ -219,18 +219,26 @@ ul {
   }
 
   .whatsapp {
-    background: #25d366;
+    background: linear-gradient(135deg, #25d366, #128c7e);
     color: white;
     &:hover {
-      background: darken(#25d366, 10%);
+      background: darken(#147b39, 10%);
     }
   }
 
   .discord {
-    background: #5865f2;
+    background: linear-gradient(135deg, #5865f2, #404eed);
     color: white;
     &:hover {
-      background: darken(#5865f2, 10%);
+      background: darken(#2b3281, 10%);
+    }
+  }
+
+  .tiktok {
+    background: linear-gradient(135deg, #25f4ee, #fe2c55);
+    color: white;
+    &:hover {
+      background: darken(#5a5153, 10%);
     }
   }
 }

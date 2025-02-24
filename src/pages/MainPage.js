@@ -128,7 +128,7 @@ function MainPage() {
       setCurrentQuestion(currentQuestion - 1);
     }
   };
-
+  step = 2;
   return (
     <div className="mainPage">
       <img src={logoAgora} alt="Logo del Ágora" className="logoAgora" />
@@ -249,6 +249,14 @@ function MainPage() {
               rel="noreferrer"
             >
               🎙️ Unirme a Discord
+            </a>
+            <a
+              href="https://www.tiktok.com/@theagorahub"
+              target="_blank"
+              className="tiktok"
+              rel="noreferrer"
+            >
+              📷 Tiktok
             </a>
           </div>
           <footer>Ⓒ2024 Ágora Group</footer>
