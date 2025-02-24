@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-//Styles
-import "./styles/styles.scss";
+import "./styles/styles.scss"; // Importa estilos globales
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

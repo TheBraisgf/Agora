@@ -1,0 +1,77 @@
+[
+  {
+    "question": "¿Te gusta la tecnología y la programación?",
+    "options": ["Sí, me encanta", "No mucho"],
+    "points": [2, 0]
+  },
+  {
+    "question": "¿Lees libros con frecuencia?",
+    "options": ["Sí, leo bastante", "Leo ocasionalmente", "No leo"],
+    "points": [2, 1, -1]
+  },
+  {
+    "question": "¿Te gustan los videojuegos y juegos de mesa?",
+    "options": [
+      "Sí, ambos",
+      "Solo videojuegos",
+      "Solo juegos de mesa",
+      "Ninguno"
+    ],
+    "points": [2, 1, 1, -2]
+  },
+  {
+    "question": "¿Practicas algún deporte o actividad física?",
+    "options": [
+      "Sí, entreno regularmente",
+      "Hago algo de ejercicio",
+      "No hago nada"
+    ],
+    "points": [2, 1, 0]
+  },
+  {
+    "question": "¿Eres fanático del fútbol?",
+    "options": ["Sí, me encanta", "Lo veo ocasionalmente", "No me interesa"],
+    "points": [-5, -3, 2]
+  },
+  {
+    "question": "¿Prefieres conversaciones sobre cultura, ciencia o política?",
+    "options": ["Cultura y ciencia", "Política", "Ninguna"],
+    "points": [2, -4, -1]
+  },
+  {
+    "question": "¿Tienes algún hobby creativo?",
+    "options": ["Sí, dibujo, escribo o creo contenido", "No"],
+    "points": [2, -2]
+  },
+  {
+    "question": "¿Qué opinas de la astrología y pseudociencias?",
+    "options": ["Son interesantes", "No creo en ellas", "Las odio"],
+    "points": [-4, 2, 1]
+  },
+  {
+    "question": "¿Te consideras alguien radical en algún tema?",
+    "options": ["Sí", "No"],
+    "points": [-5, 2]
+  },
+  {
+    "question": "¿Te gustan las fiestas, beber y salir de fiesta?",
+    "options": [
+      "Sí, me encanta",
+      "Depende del momento",
+      "No, prefiero otros planes"
+    ],
+    "points": [-8, -1, 2]
+  },
+
+  {
+    "question": "¿Qué opinas de la inteligencia artificial?",
+    "options": ["Es el futuro", "Es peligrosa", "Me da igual"],
+    "points": [2, -1, 0]
+  },
+
+  {
+    "question": "¿Te consideras un friki?",
+    "options": ["Sí, me encantan los cómics, anime y videojuegos", "No"],
+    "points": [2, -1]
+  }
+]

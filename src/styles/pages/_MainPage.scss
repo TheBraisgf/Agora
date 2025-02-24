@@ -1,129 +1,266 @@
-.mainPage {
-  overflow-y: hidden;
-  position: relative;
+$primary-color: #00c853;
+$secondary-color: #5865f2;
+$background-gradient: linear-gradient(135deg, #ffffff 30%, #e0ffe0 100%);
+$text-color: #222;
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+
+// 🎨 Configuración general del sitio
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Cinzel", serif !important;
+  background: $background-gradient;
+  color: $text-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
-  color: white;
+}
+
+// 📜 Estilos generales
+.mainPage {
+  width: 90%;
+  max-width: 500px;
+}
+
+// 🔱 Logo destacado del Ágora
+.logoAgora {
+  width: 120px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0px 4px 8px rgba(0, 200, 83, 0.5));
+}
+
+// 📊 Barra de progreso de las preguntas
+.progress {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+// 🧠 Contenedor de preguntas
+.quiz {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh; // Asegura que todo el contenido ocupe la pantalla
-
-  p,
-  h1{
-    font-family: "Capitalis", sans-serif;
-    text-shadow: 6px 1px 2px black;
-  }
-
-  a{
-     font-family: "Capitalis", sans-serif;
-     background-color: white;
-     color: black;
-     border-radius: 20px;
-     padding: 5px;
-    text-decoration: none ;
-  }
-
-  ul{
-    padding: 0 !important;
-    margin-top: 15px;
-  }
-
-  li{
-    margin-top: 15px;
-    list-style-type: none;
-  }
-h2{
- 
-  margin-top: 5px !important;
 }
 
-p{
-  margin: 0;
-}
-footer{
-  position: absolute;
-  bottom: 0;
+// 🏛️ Estilos para la tarjeta de pregunta
+.question-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 200, 83, 0.3);
+  margin-bottom: 20px;
   width: 100%;
-  color: bwhitelack;
-  text-align: center;
-  padding: 10px;
-
+  transition: all 0.3s ease-in-out;
 }
-  .hero-section {
-    padding: 20px;
-    max-width: 90vw; // Limitar el ancho en pantallas pequeñas
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; // Centrar en pantallas grandes y pequeñas
+
+// 🎯 Botones de respuesta
+.answer-button {
+  display: block;
+  background: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
   }
+}
 
-  // Estilos para el logo
-  .logoAgora {
-    width: 200px; // Tamaño base del logo
-    height: auto;
+// 🔄 Botón de navegación atrás
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
 
-    @media (max-width: 768px) {
-      width: 150px; // Tamaño del logo en tablets y pantallas medianas
-    }
+.back-button {
+  background: $secondary-color;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
 
-    @media (max-width: 480px) {
-      width: 45vw; // Tamaño del logo en móviles pequeños
-    }
+  &:hover {
+    transform: scale(1.05);
   }
+}
+
+// ⚡ Pantalla de bienvenida con más impacto
+.intro {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 200, 83, 0.4);
+  color: white;
+  text-align: center;
+  margin: 25px;
+  animation: fadeIn 1s ease-in-out;
 
   .main-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 200, 83, 0.3);
   }
 
   .main-description {
-    font-size: 1.5rem;
-    max-width: 55vw;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
     line-height: 1.5;
   }
 
-  .main-call-to-action {
+  .start-button {
+    background: linear-gradient(45deg, $primary-color, #007b40);
+    color: white;
     font-size: 1.2rem;
-    margin-top: 10px;
-  }
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 200, 83, 0.6);
 
-  // Media queries para pantallas pequeñas
-  @media (max-width: 768px) {
-    .hero-section {
-      max-width: 100vw; // En móviles, ocupa todo el ancho
-      padding: 15px; // Reducir padding
-    }
-
-    .main-title {
-      font-size: 2.5rem; // Ajustar tamaño de fuente
-    }
-
-    .main-description {
-      font-size: 1.2rem;
-      max-width: 90vw; // Ocupa más ancho en móviles
-    }
-
-    .main-call-to-action {
-      font-size: 1rem;
+    &:hover {
+      transform: scale(1.1);
+      background: linear-gradient(45deg, #007b40, $primary-color);
     }
   }
+}
 
-  @media (max-width: 480px) {
-    .main-title {
-      font-size: 2.5rem; // Más pequeño en móviles pequeños
-    }
+// ✅ Estilos para la pantalla de aceptación con scroll
+.accepted {
+  max-width: 600px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 0px 50px rgba(0, 200, 83, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  max-height: 80vh;
+  // overflow-y: auto;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInEpic 1.5s ease-out forwards;
+}
 
-    .main-description {
-      font-size: 1.1rem;
-    }
+@keyframes fadeInEpic {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
-    .main-call-to-action {
-      font-size: 1rem;
+// ✨ Mensaje épico del Arconte
+.arconte-message {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: $primary-color;
+  text-shadow: 0px 0px 8px rgba(0, 200, 83, 0.8);
+}
+
+// 🔗 Botones de unión
+.join-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 5px 10px rgba(0, 200, 83, 0.7);
     }
   }
+
+  .whatsapp {
+    background: #25d366;
+    color: white;
+    &:hover {
+      background: darken(#25d366, 10%);
+    }
+  }
+
+  .discord {
+    background: #5865f2;
+    color: white;
+    &:hover {
+      background: darken(#5865f2, 10%);
+    }
+  }
+}
+
+// 🔥 Efecto de fuego en la pantalla de rechazo
+.rejected {
+  background: rgba(255, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: red;
+  font-weight: bold;
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translateX(-2px);
+  }
+  20%,
+  80% {
+    transform: translateX(2px);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translateX(-4px);
+  }
+  40%,
+  60% {
+    transform: translateX(4px);
+  }
+}
+
+// 📜 Footer siempre en su lugar
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  color: #666;
 }
