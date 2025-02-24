@@ -147,7 +147,7 @@ html {
   max-width: 600px;
   width: 90%;
   background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0px 0px 50px rgba(0, 200, 83, 0.3);
+  // box-shadow: 0px 0px 50px rgba(0, 200, 83, 0.3);
   border-radius: 15px;
   padding: 20px;
   max-height: 80vh;
@@ -156,6 +156,10 @@ html {
   opacity: 0;
   transform: scale(0.9);
   animation: fadeInEpic 1.5s ease-out forwards;
+
+  h2 {
+    font-size: 1.4rem !important;
+  }
 }
 
 @keyframes fadeInEpic {
@@ -181,6 +185,15 @@ html {
   text-shadow: 0px 0px 8px rgba(0, 200, 83, 0.8);
 }
 
+ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  max-width: 500px;
+  li {
+    margin-bottom: 10px;
+  }
+}
 // 🔗 Botones de unión
 .join-buttons {
   display: flex;
